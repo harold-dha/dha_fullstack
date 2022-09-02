@@ -23,3 +23,35 @@ git init
 * Para guardar los archivos automaticamente
 
     File/autosave
+
+* Para guardar los cambios en memoria (local)
+
+```bash
+git add
+```
+
+* Para ver el estado de nuestros archivos
+
+```bash
+git status
+```
+
+* Confirmar una instantanea (SNAPSHOT) de los cambios confirmados (git add .) Se almacena en un historial
+
+```bash
+git commit -m "message"
+```
+
+* Comando para ver el historial de commits 
+
+[x] Git log retorna un `id` con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
+
+* Comando para ver el detalle del commit
+```bash
+git show "id"
+```
+
+* Comando para cambiar el nombre de la rama donde estas posicionado
+```bash
+git branch -M main
+```
