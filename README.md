@@ -42,7 +42,10 @@ git status
 git commit -m "message"
 ```
 
-* Comando para ver el historial de commits 
+* Comando para ver el historial de commits en la actual rama
+```bash
+git log
+```
 
 [x] Git log retorna un `id` con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
 
