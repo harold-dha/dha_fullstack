@@ -62,7 +62,7 @@ git branch -M main
 * git remote add [alias] [url]
 ```
 git remote add origin https://github.com/HaroldYontop/ProjectBR.git
-git remote add 3hs ttps://github.com/harold3hs/3hs_fullstack.git
+git remote add 3hs https://github.com/harold3hs/3hs_fullstack.git
 ```
 * Ver los repositorios remotos
 ```
