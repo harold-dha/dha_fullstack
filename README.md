@@ -54,7 +54,23 @@ git log
 git show "id"
 ```
 
-* Comando para cambiar el nombre de la rama donde estas posicionado
+* Comando para cambiar el nombre de la rama donde estas posicionado -> buena practica master a main
 ```bash
 git branch -M main
 ```
+
+* git remote add [alias] [url]
+```
+git remote add origin https://github.com/HaroldYontop/ProjectBR.git
+git remote add 3hs ttps://github.com/harold3hs/3hs_fullstack.git
+```
+* Ver los repositorios remotos
+```
+git remote -v
+```
+git remote remove 3hs
+
+* git remote set-url
+
+git remote set-url origin https://github.com/HaroldYontop/anotherProject.git
+git remote set-url 3hs https://github.com/harold3hs/anotherProject.git
