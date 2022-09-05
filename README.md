@@ -39,7 +39,8 @@ git add "nombreArchivo"
 * Para quitar los cambios del stage
 
 ```bash
-git checkout "nombreArchivo"
+git checkout "nombreArchivo" -- deshace todos los cambios
+git reset "nombreArchivo" -- No deshace los cambios, lo quita del stage (quita el git add)
 ```
 
 * Para ver el estado de nuestros archivos
@@ -102,4 +103,4 @@ git remote set-url origin https://github.com/HaroldYontop/anotherProject.git
 git remote set-url 3hs https://github.com/harold3hs/anotherProject.git
 ```
 <!-- Probrando Comando -->
-<!-- Probrando Comando from branch2 -->
+<!-- Probrando Comando from branch1 -->
