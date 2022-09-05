@@ -5,13 +5,15 @@ Comando para configurar el usuario y el correo
 * Para poder configurar el email
 
 ```bash
-git config --global user.email "email"
+git config --global user.email "email" (global)
+git config user.email "email" (proyecto)
 ```
 
 * Para poder configurar el username
 
 ```bash
-git config --global user.name "username"
+git config --global user.name "username" (global)
+git config user.name "username" (proyecto)
 ```
 
 * Sirve para poder empezar a usar el control de versiones  (git) en nuestra carpeta.
@@ -74,6 +76,18 @@ git branch development master (crea rama)
 git checkout -b developmente master (crea rama y cambia)
 ```
 
+* Comando para borrar rama localmente
+```bash
+git branch -d qa
+git branch --delete developmete
+```
+
+* Comando para borrar rama remota
+```bash
+git push 3hs -d docs/comandos
+git push 3hs --delete feat/nuevofeat
+```
+
 [x] Git log retorna un `id`, con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
 
 * Comando para ver el detalle del commit
@@ -86,7 +100,8 @@ git show "id"
 git branch -M main
 ```
 
-* git remote add [alias] [url]
+* Comando para agregar un repositorio remoto (origin y 3hs - nombre de los repos remotos)
+git remote add [alias] [url]
 ```
 git remote add origin https://github.com/HaroldYontop/ProjectBR.git
 git remote add 3hs https://github.com/harold3hs/3hs_fullstack.git
@@ -104,3 +119,5 @@ git remote set-url 3hs https://github.com/harold3hs/anotherProject.git
 ```
 <!-- Probrando Comando -->
 <!-- Probrando Comando from branch1 -->
+
+* git config -l
