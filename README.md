@@ -65,6 +65,12 @@ git reset HEAD~1
 ```bash
 git log
 git log --oneline
+git log --graph
+```
+* Comando para crear otra rama basandonos en otra (git pull antes de crear)
+```bash
+git branch development master (crea rama)
+git checkout -b developmente master (crea rama y cambia)
 ```
 
 [x] Git log retorna un `id`, con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
