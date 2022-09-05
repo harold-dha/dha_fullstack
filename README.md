@@ -24,10 +24,22 @@ git init
 
     File/autosave
 
-* Para guardar los cambios en memoria (local)
+
+TU REPOSITORIO (LOCAL) ESTA COMPUESTO POR TRES "ARBOLES":
+
+1. Working dir: cambios sin guardar
+2. index (stage): cambios añadidos al stage con git add 
+3. head: cuando se realiza un git commit
+
+* Para guardar los cambios en memoria (local) al stage
 
 ```bash
-git add
+git add "nombreArchivo"
+```
+* Para quitar los cambios del stage
+
+```bash
+git checkout "nombreArchivo"
 ```
 
 * Para ver el estado de nuestros archivos
@@ -36,18 +48,26 @@ git add
 git status
 ```
 
-* Confirmar una instantanea (SNAPSHOT) de los cambios confirmados (git add .) Se almacena en un historial
+* Confirmar una instantanea (SNAPSHOT) de los cambios confirmados (git add .) al HEAD. (local)
+Se almacena en un historial 
 
 ```bash
 git commit -m "message"
 ```
 
+* Si se realizó un commit y se quiere agregar un cambio que nos falto para ese commit, para quitarlo del arbol HEAD usar:
+
+```bash
+git reset HEAD~1
+```
+
 * Comando para ver el historial de commits en la actual rama
 ```bash
 git log
+git log --oneline
 ```
 
-[x] Git log retorna un `id` con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
+[x] Git log retorna un `id`, con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
 
 * Comando para ver el detalle del commit
 ```bash
