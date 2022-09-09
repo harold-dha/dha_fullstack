@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- *PARA PODER CREAR UN FORMULARIO NECESITAMOS LA ETIQUETA form -->
+    <form>
+        <!-- !Lo que esta dentro son las partes del formulario -->
+        <!-- IMPORTANTE: CASI TODOS LOS INPUTS TIENEN PLACEHOLDER -->
+        <!-- INPUT type:text -->
+        <!--? required: true(verdadero) -->
+        <p>
+            <input type="text" placeholder="Ingrese su nombre"> <!-- placeholder es un texto de ayuda -->
+            <input
+                id="input-apellido"
+                value=""
+                type="text"
+                required
+                name="nombre"
+                readonly
+                placeholder="Ingrese su apellido"
+            />  
+        </p>
+        <!-- INPUT type:number -->
+        <p>
+            <input type="number" placeholder="Ingrese su edad"> <!-- placeholder es un texto de ayuda -->
+        </p>
+        <!-- INPUT type:email -->
+        <p>
+            <input type="email" placeholder="Ingrese su email"> <!-- placeholder es un texto de ayuda -->
+        </p>
+        <!-- INPUT type:password -->
+        <p>
+            <input value="1234567" required type="password" name="password" placeholder="Ingrese su contraseña"> <!-- placeholder es un texto de ayuda -->
+        </p>
+        <!-- INPUT type:date -->
+        <p>
+            <input type="date" placeholder="Ingrese su fecha"> <!-- placeholder es un texto de ayuda -->
+        </p>
+        <!-- Lista de opciones -->
+        <p>
+            <select>
+                <!-- Lo que se envia al backend es lo que esta dentro de value -->
+                <option value="" disabled selected>Selecciona un curso</option> <!-- selected: indica por default que esta seleccionado  -->
+                <option value="curso-react">Curso de React</option>
+                <option value="curso-html">Curso de HTML</option>
+                <option value="curso-css">Curso de Css</option>
+                <option value="curso-angular">Curso de Angular</option>
+            </select>
+        </p>
+        
+        <!-- buttom e input con el type:submit seria lo mismo, submit envia datos -->
+        <!-- Botones para enviar datos con type:submit-->
+        <button type="submit">Enviar datos con boton</button>
+        <input type="submit" value="Enviar datos con input" />
+
+    </form>
+    
+</body>
+</html>
