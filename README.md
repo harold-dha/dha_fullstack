@@ -69,6 +69,7 @@ git reset HEAD~1
 git log
 git log --oneline
 git log --graph
+git log --graph --oneline
 ```
 * Comando para crear otra rama basandonos en otra (git pull antes de crear)
 ```bash
@@ -110,7 +111,10 @@ git remote add 3hs https://github.com/harold3hs/3hs_fullstack.git
 ```
 git remote -v
 ```
+* Comando para remover repositorios remotos
+```
 git remote remove 3hs
+```
 
 * git remote set-url
 ```
@@ -120,4 +124,14 @@ git remote set-url 3hs https://github.com/harold3hs/anotherProject.git
 <!-- Probrando Comando -->
 <!-- Probrando Comando from branch1 -->
 
-* git config -l
+* git config -l     // 1 guion (-) para una letra
+* git config --list // 2 guiones (-) para una palabra
+
+git merge 
+
+* Git con Codecommit
+
+```
+git config --global credential.username "IAMusername" ej. harold.yontop@soapros.pe+1-at-314962237570
+git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/tdp_gd_backend
+```
