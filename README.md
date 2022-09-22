@@ -73,20 +73,32 @@ git log --graph --oneline
 ```
 * Comando para crear otra rama basandonos en otra (git pull antes de crear)
 ```bash
-git branch development master (crea rama)
-git checkout -b developmente master (crea rama y cambia)
+git branch feat/branch1 master (crea rama)
+git checkout -b feat/branch2 master (crea rama y cambia)
 ```
 
 * Comando para borrar rama localmente
 ```bash
-git branch -d qa
-git branch --delete developmete
+git branch -d feat/branch1
+git branch --delete feat/branch2
 ```
 
 * Comando para borrar rama remota
 ```bash
-git push 3hs -d docs/comandos
-git push 3hs --delete feat/nuevofeat
+git push [repository-remote] -d [remote-branch]
+git push origin-dha -d feat/branch1
+git push origin-dha --delete feat/branch2
+```
+
+* Comando para fusionar ramas
+```bash
+git merge feat/branch1 (desde master)
+git merge feat/branch2 (desde master)
+```
+
+* Comando para traer los ultimos cambios a tu rama
+```bash
+git rebase master (desde feat/branch3)
 ```
 
 [x] Git log retorna un `id`, con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
@@ -101,25 +113,27 @@ git show "id"
 git branch -M main
 ```
 
-* Comando para agregar un repositorio remoto (origin y 3hs - nombre de los repos remotos)
-git remote add [alias] [url]
+* Comando para agregar un repositorio remoto (origin y origin-dha - nombre de los repos remotos)
 ```
+git remote add [alias] [url]
 git remote add origin https://github.com/HaroldYontop/ProjectBR.git
-git remote add 3hs https://github.com/harold3hs/3hs_fullstack.git
+git remote add origin-dha https://github.com/harold-dha/dha_fullstack.git
 ```
 * Ver los repositorios remotos
 ```
 git remote -v
 ```
 * Comando para remover repositorios remotos
+
+git remote remove [remote-branch]
 ```
-git remote remove 3hs
+git remote remove origin-dha
 ```
 
 * git remote set-url
 ```
 git remote set-url origin https://github.com/HaroldYontop/anotherProject.git
-git remote set-url 3hs https://github.com/harold3hs/anotherProject.git
+git remote set-url origin-dha https://github.com/harold-dha/anotherProject.git
 ```
 <!-- Probrando Comando -->
 <!-- Probrando Comando from branch1 -->
