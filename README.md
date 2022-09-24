@@ -69,7 +69,7 @@ git reset HEAD~1
 git log
 git log --oneline
 git log --graph
-git log --graph --oneline
+git log --graph --oneline (los primeros *'s hacen referencia a la rama padre)
 ```
 * Comando para crear otra rama basandonos en otra (git pull antes de crear)
 ```bash
@@ -92,13 +92,13 @@ git push origin-dha --delete feat/branch2
 
 * Comando para fusionar ramas
 ```bash
-git merge feat/branch1 (desde master)
-git merge feat/branch2 (desde master)
+git merge feat/branch1 (desde master) - trajo file_branch1.txt a master
+git merge feat/branch2 (desde master) - trajo file_branch2.txt a master
 ```
 
-* Comando para traer los ultimos cambios a tu rama
+* Comando para traer los ultimos cambios de otras ramas y rebasar(poner encima) tus cambios locales sobre estas  - (The local changes you made will be rebased on top of the remote changes)
 ```bash
-git rebase master (desde feat/branch3)
+git rebase master (desde feat/branch3) - llevo file_branch1.txt y file_branch2.txt a feat/branch3
 ```
 
 [x] Git log retorna un `id`, con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
