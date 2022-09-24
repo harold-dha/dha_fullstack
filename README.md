@@ -96,11 +96,30 @@ git merge feat/branch1 (desde master) - trajo file_branch1.txt a master
 git merge feat/branch2 (desde master) - trajo file_branch2.txt a master
 ```
 
-* Comando para traer los ultimos cambios de otras ramas y rebasar(poner encima) tus cambios locales sobre estas  - (The local changes you made will be rebased on top of the remote changes)
+* Comando para traer los ultimos cambios(commits) de otras ramas y rebasar(poner encima) tus cambios locales sobre estas  - (The local changes you made will be rebased on top of the remote changes)
 ```bash
 git rebase master (desde feat/branch3) - llevo file_branch1.txt y file_branch2.txt a feat/branch3
 ```
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+[x] Si no es con PULL REQUEST 
+  
+  Posicionados en feat/branch3 (habiendo hecho el git add, commit y push)
+- luego cambiamos a :    **git checkout master**
+- ejecutar el comando:    **git merge feat/branch3** (desde master) - trae file_branch3 a master
+- finalizamos con :    **git push origin master** (desde master) - para evitar el PULL REQUEST
 
+[x] Si es con PULL REQUEST
+  
+  Posicionados en feat/branch3 (habiendo hecho el git add y commit)
+- luego cambiamos a:    **git checkout master**
+- actualizar rama padre (master): **git pull origin master** 
+  (dado que ya hubo cambios subidos por PULL REQUEST de feat/branch1 y feat/branch2) 
+- cambiamos a la rama hija (feat/branch3): **git checkout feat/branch3**
+- ejecutar comando: **git merge master** (traera los cambios de los PULL REQUEST de feat/bracnh1 y feat/branch2)
+- resolvemos conflicto si hay
+- finalizamos con: **git push origin feat/branch3** (desde feat/branch3) - Y hacemos el PULL REQUEST para llevar los cambios a development
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 [x] Git log retorna un `id`, con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit.
 
 * Comando para ver el detalle del commit
