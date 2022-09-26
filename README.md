@@ -115,7 +115,7 @@ git rebase master (desde feat/branch3) - llevo file_branch1.txt y file_branch2.t
 - actualizar rama padre (master): **git pull origin master** 
   (dado que ya hubo cambios subidos por PULL REQUEST de feat/branch1 y feat/branch2) 
 - cambiamos a la rama hija (feat/branch3): **git checkout feat/branch3**
-- ejecutar comando: **git merge master** (traera los cambios de los PULL REQUEST de feat/bracnh1 y feat/branch2)
+- ejecutar comando: **git merge master** o **git pull --rebase origin master** (traera los cambios de los PULL REQUEST de feat/bracnh1 y feat/branch2)
 - resolvemos conflicto si hay
 - finalizamos con: **git push origin feat/branch3** (desde feat/branch3) - Y hacemos el PULL REQUEST para llevar los cambios a development
 
