@@ -42,3 +42,8 @@ p {
 h1[role="titulo"] {
   color:black;
 }
+
+/* Selector combinado */
+.big_table td, th {
+    padding: 20px;
+}
