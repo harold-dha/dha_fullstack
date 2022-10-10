@@ -35,3 +35,10 @@ p {
 #div_temas {
   display: none !important ;
 }
+
+/* Jerarquias: 
+   Selector de elemento con atributo - mas especifico equivalente a un !important  
+*/
+h1[role="titulo"] {
+  color:black;
+}
