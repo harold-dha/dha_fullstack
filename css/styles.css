@@ -1,3 +1,37 @@
 #div_temas {
   display: none;
 }
+
+/* Selectores */
+/* 1. Selector de elemento: para toda etiqueta HTML -- MENOR prevalencia */
+h1 {
+  color: green;
+  background-color: beige;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+p {
+  color: rgb(223, 15, 15);
+  background-color: rgb(255, 177, 75);
+  padding: 10px;
+}
+/* 2. Selector de Clase: con (.) -- prevalece las propiedades de las clases */
+/* Como lo aplicamos el selector de clase a un elemento html, con la propiedad(atributo) class */
+.titulo {
+  color: rgb(35, 150, 73);
+  font-size: 30px;
+}
+.big_table {
+  font-size: 15px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+/* 3. Selector de ID: con (#) */
+/* Como lo aplicamos el selector de id a un elemento html, con la propiedad(atributo) id */
+#titulo_huawei {
+  color: rgb(76, 13, 128);
+}
+#div_temas {
+  display: none !important ;
+}
