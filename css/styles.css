@@ -27,6 +27,12 @@ p {
   border: 1px solid #ccc;
   text-align: center;
 }
+.product_cell {
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
 /* 3. Selector de ID: con (#) */
 /* Como lo aplicamos el selector de id a un elemento html, con la propiedad(atributo) id */
 #titulo_huawei {
@@ -40,10 +46,11 @@ p {
    Selector de elemento con atributo - mas especifico equivalente a un !important  
 */
 h1[role="titulo"] {
-  color:black;
+  color: black;
 }
 
 /* Selector combinado */
-.big_table td, th {
-    padding: 20px;
+.big_table td,
+th {
+  padding: 20px;
 }
