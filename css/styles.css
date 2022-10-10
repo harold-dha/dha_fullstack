@@ -50,7 +50,13 @@ h1[role="titulo"] {
 }
 
 /* Selector combinado */
+/* Afetara a todos los td y th de la clase */
 .big_table td,
 th {
   padding: 20px;
+}
+/* Afectara al elemento h2 continuo de la clase,
+   Paralelo a la navegacion de un json -> laptop.h2 y a ese h2 aplicar los estilos */
+.laptop > h2 {
+  color: blue;
 }
