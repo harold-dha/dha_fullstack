@@ -103,3 +103,15 @@ th {
 .div_form > form > button:focus {
   border: 2px solid red;
 }
+
+/* PseudoElemento */
+.laptop > h2::before {
+  content: "Es una ";
+  font-size: 15px;
+  color: rgb(255, 0, 221);
+}
+.laptop > h2::after {
+  content: " moderna";
+  font-size: 15px;
+  color: rgb(0, 140, 255);
+}
