@@ -33,6 +33,12 @@ p {
   padding: 10px;
   margin: 20px;
 }
+.audifonos {
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
 /* 3. Selector de ID: con (#) */
 /* Como lo aplicamos el selector de id a un elemento html, con la propiedad(atributo) id */
 #titulo_huawei {
@@ -59,4 +65,20 @@ th {
    Paralelo a la navegacion de un json -> laptop.h2 y a ese h2 aplicar los estilos */
 .laptop > h2 {
   color: blue;
+}
+
+/* Psuedoclase */
+.laptop:hover {
+  border-color: black;
+}
+.audifonos:hover {
+  border-color: black;
+}
+.product_cell:hover {
+  border: 2px dashed blue;
+  box-shadow: 0px 0px 10px blue;
+}
+.product_cell:hover > img {
+  opacity: 50%;
+  border: 0px solid black;
 }
