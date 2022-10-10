@@ -39,6 +39,10 @@ p {
   padding: 10px;
   margin: 20px;
 }
+.div_form {
+  width: 400px;
+  margin: 20px auto;
+}
 /* 3. Selector de ID: con (#) */
 /* Como lo aplicamos el selector de id a un elemento html, con la propiedad(atributo) id */
 #titulo_huawei {
@@ -81,4 +85,21 @@ th {
 .product_cell:hover > img {
   opacity: 50%;
   border: 0px solid black;
+}
+.div_form > form > button {
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 20%;
+  font-size: 15px;
+  outline: none;
+}
+.div_form > form > button:hover {
+  background-color: #666;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.div_form > form > button:focus {
+  border: 2px solid red;
 }
