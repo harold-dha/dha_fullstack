@@ -124,3 +124,15 @@ th {
   font-size: 15px;
   color: rgb(0, 140, 255);
 }
+
+/* media */
+@media (min-width: 600px) {
+  body {
+    background-color: hsl(30, 38%, 92%);
+  }
+}
+@media (min-width: 900px) {
+  body {
+    background-color: hsl(0, 78%, 45%);
+  }
+}
