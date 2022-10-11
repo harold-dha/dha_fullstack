@@ -1,0 +1,27 @@
+/* Es el todo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.padre {
+  display: flex;
+  /* Esto va a respetar el ancho de la pantalla y cuando
+    un element ocupe mas de lo dado lo mandara a la siguiente
+    fila */
+  flex-wrap: wrap;
+}
+
+.hijo {
+  width: 25%;
+  height: 300px;
+  border: solid 5px green;
+  background-color: #fff;
+}
