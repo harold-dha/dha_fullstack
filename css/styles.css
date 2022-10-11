@@ -125,7 +125,10 @@ th {
   color: rgb(0, 140, 255);
 }
 
-/* media */
+/* Media Query */
+body {
+  background-color: #666;
+}
 @media (min-width: 600px) {
   body {
     background-color: hsl(30, 38%, 92%);
@@ -133,6 +136,6 @@ th {
 }
 @media (min-width: 900px) {
   body {
-    background-color: hsl(0, 78%, 45%);
+    background-color: blue;
   }
 }
