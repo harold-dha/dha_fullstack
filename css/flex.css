@@ -17,6 +17,10 @@ body {
     un element ocupe mas de lo dado lo mandara a la siguiente
     fila */
   flex-wrap: wrap;
+  justify-content: center;
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
 }
 
 .hijo {
