@@ -1,7 +1,13 @@
+/* Formas de importar fonts
+  1. Desde el HTML: <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"/>
+  2. Desde el CSS: @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); 
+*/
 #div_temas {
   display: none;
 }
-
+body {
+  font-family: "Poppins", sans-serif;
+}
 /* Selectores */
 /* 1. Selector de elemento: para toda etiqueta HTML -- MENOR prevalencia */
 h1 {
@@ -42,6 +48,9 @@ p {
 .div_form {
   width: 400px;
   margin: 20px auto;
+}
+.laptop {
+  /* font-family: "Dancing Script", cursive; */
 }
 /* 3. Selector de ID: con (#) */
 /* Como lo aplicamos el selector de id a un elemento html, con la propiedad(atributo) id */
