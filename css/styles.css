@@ -2,9 +2,6 @@
   1. Desde el HTML: <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"/>
   2. Desde el CSS: @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"); 
 */
-#div_temas {
-  display: none;
-}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -38,12 +35,14 @@ p {
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .audifonos {
   border: 2px solid purple;
   border-radius: 10px;
-  padding: 10px;
-  margin: 20px;
+  /* padding: 10px;
+  margin: 20px; */
 }
 .div_form {
   width: 400px;
@@ -58,7 +57,7 @@ p {
   color: rgb(76, 13, 128);
 }
 #div_temas {
-  display: none !important ;
+  display: block !important;
 }
 
 /* Jerarquias: 
@@ -136,6 +135,69 @@ body {
 }
 @media (min-width: 900px) {
   body {
-    background-color: blue;
+    background-color: hsla(32, 97%, 65%, 0.616);
+  }
+}
+
+/* Reto */
+@media (min-width: 600px) {
+  .product_cell {
+    background-color: hsla(32, 97%, 65%, 0.616);
+  }
+  #div_temas > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Separacion de elementos */
+    justify-content: space-around;
+  }
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.product {
+  width: 80%; /* ocupara el 80% de su padre */
+  height: 400px;
+  min-width: 280px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  position: relative;
+}
+.product > h2 {
+  text-align: center;
+}
+.product > img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.product:hover {
+  border: 4px dashed red;
+  box-shadow: 0px 0px 10px red;
+  cursor: grab;
+}
+.product:hover > img {
+  opacity: 50%;
+  border: 4px solid black;
+}
+@media (min-width: 600px) {
+  .product {
+    width: 40%; /* ocupara el 80% de su padre */
+  }
+}
+@media (min-width: 900px) {
+  .product {
+    width: 30%; /* ocupara el 80% de su padre */
   }
 }
